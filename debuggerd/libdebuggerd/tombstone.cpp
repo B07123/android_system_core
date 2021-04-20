@@ -72,9 +72,9 @@ using namespace std::literals::string_literals;
 static void dump_header_info(log_t* log) {
   auto fingerprint = GetProperty("ro.build.fingerprint", "unknown");
   auto revision = GetProperty("ro.revision", "unknown");
-  auto zenx_version = GetProperty("ro.zenx.version", "unknown");
+  auto zeus_version = GetProperty("ro.zeus.version", "unknown");
 
-  _LOG(log, logtype::HEADER, "ZenX Version: '%s'\n", zenx_version.c_str());
+  _LOG(log, logtype::HEADER, "Zeus Version: '%s'\n", zeus_version.c_str());
   _LOG(log, logtype::HEADER, "Build fingerprint: '%s'\n", fingerprint.c_str());
   _LOG(log, logtype::HEADER, "Revision: '%s'\n", revision.c_str());
   _LOG(log, logtype::HEADER, "ABI: '%s'\n", ABI_STRING);
